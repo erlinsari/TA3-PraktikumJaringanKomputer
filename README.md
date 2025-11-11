@@ -44,6 +44,7 @@ Hal ini bisa dilakukan dengan dua cara:
 Tanpa perangkat Layer 3, setiap VLAN tetap terisolasi dan tidak dapat saling berkomunikasi, meskipun berada pada switch yang sama atau terhubung melalui trunk.
 
 
+
 Reflection Question 2
 
 Jawaban:
@@ -61,4 +62,5 @@ Penerapan VLAN yang efektif memberikan berbagai manfaat penting bagi organisasi,
 5. Manajemen jaringan lebih mudah, VLAN memungkinkan pengelompokan perangkat secara logis berdasarkan fungsi, lokasi, atau tim, sehingga konfigurasi dan troubleshooting lebih sederhana.
 
 6. Fleksibilitas dan skalabilitas, VLAN memudahkan penambahan, penghapusan, atau pemindahan pengguna tanpa perlu perubahan fisik jaringan.
+
 
