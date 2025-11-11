@@ -26,4 +26,4 @@ Pada bagian ini dilakukan percobaan mengubah dan menghapus VLAN. Port diatur ula
 
 Part 4 Configure 802.1Q Trunk
 ![Part 4 - Trunk Configuration](./screenshots/part4.png)
-Port F0/1 pada kedua switch dikonfigurasi menjadi trunk menggunakan Dynamic Trunking Protocol (DTP), lalu diubah ke mode manual dengan switchport mode trunk. Native VLAN juga diubah menjadi 1000 untuk keamanan. Setelah itu, PC-A dan PC-B dapat saling ping antar switch.
+Port F0/1 pada kedua switch dikonfigurasi menjadi trunk menggunakan Dynamic Trunking Protocol (DTP), lalu diubah ke mode manual dengan switchport mode trunk. Native VLAN juga diubah menjadi 1000 untuk keamanan.
