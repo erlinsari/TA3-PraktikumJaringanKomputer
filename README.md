@@ -27,3 +27,30 @@ Pada bagian ini dilakukan percobaan mengubah dan menghapus VLAN. Port diatur ula
 Part 4 Configure 802.1Q Trunk
 ![Part 4 - Trunk Configuration](./screenshots/part4.png)
 Port F0/1 pada kedua switch dikonfigurasi menjadi trunk menggunakan Dynamic Trunking Protocol (DTP), lalu diubah ke mode manual dengan switchport mode trunk. Native VLAN juga diubah menjadi 1000 untuk keamanan.
+
+Reflection Question 1
+Jawaban:
+Agar perangkat pada VLAN 10 dapat berkomunikasi dengan perangkat pada VLAN 99, diperlukan perangkat Layer 3 yang dapat melakukan Inter-VLAN Routing.
+Hal ini bisa dilakukan dengan dua cara:
+
+1. Menggunakan Router (Router-on-a-Stick), satu antarmuka fisik router dibuat menjadi beberapa subinterface, dan masing-masing subinterface dikonfigurasikan untuk satu VLAN dengan alamat IP yang berbeda sebagai default gateway tiap VLAN.
+
+2. Menggunakan Switch Layer 3 (Multilayer Switch), switch ini mendukung fungsi routing melalui Switched Virtual Interface (SVI) untuk setiap VLAN.
+
+Tanpa perangkat Layer 3, setiap VLAN tetap terisolasi dan tidak dapat saling berkomunikasi, meskipun berada pada switch yang sama atau terhubung melalui trunk.
+
+Reflection Question 2
+Jawaban:
+Penerapan VLAN yang efektif memberikan berbagai manfaat penting bagi organisasi, antara lain:
+
+1. Keamanan yang lebih baik, VLAN memisahkan lalu lintas antar departemen atau kelompok pengguna, sehingga data sensitif tidak mudah diakses oleh pihak yang tidak berwenang.
+
+2. Efisiensi biaya, satu perangkat fisik dapat digunakan untuk beberapa jaringan logis, sehingga mengurangi kebutuhan perangkat keras tambahan.
+
+3. Kinerja jaringan lebih baik, dengan membatasi domain broadcast, lalu lintas jaringan menjadi lebih ringan dan efisien.
+
+4. Mengurangi broadcast storm, broadcast hanya terjadi di dalam VLAN masing-masing, sehingga meningkatkan kestabilan jaringan.
+
+5. Manajemen jaringan lebih mudah, VLAN memungkinkan pengelompokan perangkat secara logis berdasarkan fungsi, lokasi, atau tim, sehingga konfigurasi dan troubleshooting lebih sederhana.
+
+6. Fleksibilitas dan skalabilitas, VLAN memudahkan penambahan, penghapusan, atau pemindahan pengguna tanpa perlu perubahan fisik jaringan.
